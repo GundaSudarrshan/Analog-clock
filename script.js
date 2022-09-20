@@ -3,7 +3,6 @@ const minutesHand = document.querySelector(".min");
 const secondsHand = document.querySelector(".sec");
 const displayBox = document.querySelector(".display-time");
 const displayDate = document.querySelector(".display-date");
-let allNum = document.querySelectorAll(".number");
 
 const setClock = function () {
   const time = new Date();
@@ -19,7 +18,7 @@ const setClock = function () {
   ).padStart(2, 0)} ${time.getHours() > 12 ? "PM" : "AM"}`;
   displayDate.textContent = `${currDate}`;
 };
-
+// let allNum = document.querySelectorAll(".number");
 // for (let num of allNum) {
 //   num.style.transform = `rotate(${30 * num.innerText}deg)`;
 // }
